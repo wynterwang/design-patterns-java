@@ -32,10 +32,13 @@ package com.pattern.creational.factorymethod;
  */
 public class App {
     public static void main(String []args) {
-        HiringManager devManager = new DevelopmentManager();
-        devManager.takeInterview();
-
-        HiringManager marManager = new MarketingManager();
-        marManager.takeInterview();
+        {
+            HiringManager hiringManager = new DevelopmentManager();
+            hiringManager.takeInterview();
+        }
+        {
+            HiringManager hiringManager = new MarketingManager();
+            hiringManager.takeInterview();
+        }
     }
 }
